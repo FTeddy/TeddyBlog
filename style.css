@@ -16,7 +16,6 @@
 } */
 
 /* content left */
-
 .left_content {
 	grid-column: 1 / 1;
 	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url("img/Pyra.jpg") center/cover;
@@ -24,8 +23,6 @@
 	justify-content: center;
 	align-items: center;
 }
-
-/* linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) */
 
 .box_A {
 	margin:10px;
@@ -42,7 +39,6 @@
 }
 
 /* content right*/
-
 .right_content {
 	grid-column: 2 / 2;
 	background: linear-gradient(rgba(34,34,34,1), rgba(34,34,34,1));
@@ -50,16 +46,14 @@
 	display: flex;
 	flex-direction: column;
 	min-width: 400px;
+	border:1px solid maroon;
 }
 
-.blog_container {
-	margin:30px;
-}
+/* .right_content div {
+	border: 1px solid blue;
+} */
 
-.box_B {
-
-}
-
+/* navigation section */
 .navigation {
 	background-color: black;
 	display: flex;
@@ -86,21 +80,79 @@
 	color: #eaeff3;
 }
 
+/* About section */
+.about_container {
+	margin:30px;
+	/* display: flex;
+	flex-wrap: wrap;
+	justify-content: center; */
+}
 
+.box_B {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 .about_me {
-	display: grid;
-	grid-template-columns: 200px 1fr;
+	/* box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 150px; */
+	align-self: center;
+	background-color: rgb(50,50,50);
+}
+
+.image_portrait {
+	box-sizing: border-box;
+	height: 200px;
+	width: 200px;
+}
+.image_portrait img {
+	width: 200px;
+	height: 200px;
 }
 
 .about_me_content {
-	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	width:200px;
+	height:250px;
+	margin: 0px;
+	padding: 15px 10px 10px 10px;
+
+}
+
+/* Blog section */
+
+.blog {
+	margin: 30px;
+	padding: 10px;
+}
+
+hr {
+	height:1px;
+	border:0;
+	border-top: 1px solid rgb(100,100,100);
+	margin:1em 0px;
+	padding:0px;
+}
+
+.spacer {
+	flex-grow: 1;
 }
 
 /* footer */
-
 .footer {
+	display: flex;
+	justify-content: center;
 	min-width: 400px;
-	height: 100px;
-	margin: 10px;
+	margin: 0px;
+	padding: 25px 0px;
+	text-align: center;
 }
