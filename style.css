@@ -3,11 +3,9 @@
 	padding:0;
 }
 
-.column_grid {
-	display: grid;
+.main {
 	min-width: 720px;
 	height: 720px;
-	grid-template-columns: 50% 50%;
 	font-family: Helvetica;
 }
 
@@ -15,13 +13,13 @@
 	border: 1px solid maroon;
 } */
 
-/* content left */
-.left_content {
-	grid-column: 1 / 1;
+/* header */
+.title_header {
 	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.9)), url("img/Pyra.jpg") center/cover;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 200px;
 }
 
 .box_A {
@@ -38,9 +36,8 @@
 	font-size: 18px;
 }
 
-/* content right*/
-.right_content {
-	grid-column: 2 / 2;
+/* content */
+.content {
 	background: linear-gradient(rgba(34,34,34,1), rgba(34,34,34,1));
 	color: rgb(230,230,230);
 	display: flex;
@@ -49,46 +46,52 @@
 	border:1px solid maroon;
 }
 
-/* .right_content div {
-	border: 1px solid blue;
-} */
-
 /* navigation section */
 .navigation {
 	background-color: black;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	padding: 15px 0px;
+	justify-content: flex-end;
+	padding: 0px 10px;
 }
 .nav_button {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin: 0px;
-	padding: 10px 20px;
-	background-color: grey;
+	margin: 15px 5px;
+	padding: 10px 10px;
 	border: none;
 	border-radius: 4px;
-	color: #eaeff3;
 }
+
+.nav_button:hover {
+	background-color: rgba(80,80,80,0.5);
+}
+
 .nav_button a {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: bold;
+	font-size: 14px;
 	color: #eaeff3;
 }
 
-/* About section */
-.about_container {
-	margin:30px;
-	/* display: flex;
-	flex-wrap: wrap;
-	justify-content: center; */
+.nav_button a:hover {
+	color:rgb(255,200,200);
 }
 
-.box_B {
+/* About section */
+.content_2{
+	display: grid;
+	grid-template-columns: 260px 1fr;
+	margin:0px;
+
+}
+.about_container {
+	width:200px;
+	margin:30px;
+	margin-left: 40px;
+}
+
+.flex_container {
 	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
@@ -96,14 +99,14 @@
 }
 
 .about_me {
-	/* box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 150px; */
 	align-self: center;
 	background-color: rgb(50,50,50);
+}
+
+.about_me h5 {
+	font-weight: lighter;
+	font-size: 12px;
+	margin-top: 5px;
 }
 
 .image_portrait {
@@ -119,19 +122,25 @@
 .about_me_content {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	box-sizing: border-box;
 	width:200px;
-	height:250px;
+	height:180px;
 	margin: 0px;
-	padding: 15px 10px 10px 10px;
-
+	padding: 15px 15px 15px 10px;
+}
+.about_me_content p {
+	font-size: 12px;
 }
 
 /* Blog section */
-
+.blog_container {
+	width: auto;
+	max-width: 800px;
+	margin:30px;
+}
 .blog {
-	margin: 30px;
+	margin: 0px;
 	padding: 10px;
 }
 
@@ -155,4 +164,5 @@ hr {
 	margin: 0px;
 	padding: 25px 0px;
 	text-align: center;
+	background:linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.3));
 }
