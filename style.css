@@ -19,21 +19,28 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 240px;
+	height: 540px;
 }
 
 .box_A {
-	margin:10px;
-	padding: 5px;
+	margin:0px;
+	padding: 35px 45px;
 	text-align: center;
-	height:80px;
-	width:600px;
+	height:auto;
+	width:auto;
+	border: 1px solid rgba(255,255,255,0.7);
 }
 
 .box_A div {
-	color:#eaeff3;
+	/* color:#eaeff3; */
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 22px;
+	/* line-height: 40px; */
+}
+.box_A h3 {
+	font-size: 19px;
+	font-weight: lighter;
+	margin-top: 30px;
 }
 
 /* content */
@@ -48,22 +55,27 @@
 
 /* navigation section */
 .navigation {
-	background-color: black;
+	background-color: rgb(42,42,42);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	padding: 0px 10px;
+	/* color: rgb; */
+
 }
 .nav_button {
-	margin: 15px 5px;
-	padding: 10px 10px;
+	margin: 0px 0px;
+	padding: 20px 20px;
 	border: none;
-	border-radius: 4px;
+	/* border-radius: 4px; */
+	transition: 0.5s;
 }
 
-.nav_button:hover {
+.nav_button:hover  {
 	background-color: rgba(80,80,80,0.5);
+	color:rgb(240,240,240);
+
 }
 
 .nav_button a {
@@ -71,11 +83,13 @@
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 14px;
-	color: #eaeff3;
+	transition: 0.5s;
+	text-decoration: none;
+	color:grey;
 }
 
-.nav_button a:hover {
-	color:rgb(255,200,200);
+.nav_button:hover a {
+	color:rgb(240,240,240);
 }
 
 /* About section */
@@ -96,6 +110,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	box-shadow: -3px 3px 8px 3px rgba(0,0,0,0.4);
 }
 
 .about_me {
@@ -141,7 +156,10 @@
 }
 .blog {
 	margin: 0px;
-	padding: 10px;
+	padding: 15px;
+	height: 300px;
+	background-color: rgb(43,43,43);
+	box-shadow: -2px 2px 8px 2px rgba(0,0,0,0.2);
 }
 
 hr {
